@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Matura Mix · Anketa za DJ-a</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="brand-bar" aria-hidden="true">
+    <span class="bb-yellow"></span><span class="bb-blue"></span><span class="bb-red"></span><span class="bb-green"></span>
+  </div>
+  <main class="page">
+    <header class="intro">
+      <img class="logo" src="./savremena-logo.svg" alt="Savremena osnovna škola" />
+      <h1>Matura Mix</h1>
+      <p class="tagline">Anketa za DJ-a za našu maturu</p>
+      <p class="blurb">
+        Ćao! DJ pravi plejlistu za maturu i trebaju mu tvoji favoriti.
+        Upiši do <strong>5 omiljenih pesama</strong>. Što nas više odgovori,
+        to bolja žurka.
+      </p>
+      <p class="blurb muted">
+        Obavezno je samo ime i bar jedna pesma sa naslovom i izvođačem. Ostalo
+        možeš preskočiti. Podaci idu samo organizatoru i DJ-u.
+      </p>
+    </header>
+
+    <form id="survey" class="form" novalidate>
+      <section class="block">
+        <label class="field">
+          <span class="label">Ime i prezime <span class="req" aria-hidden="true">*</span></span>
+          <input type="text" id="name" name="name" required autocomplete="name"
+                 maxlength="80" placeholder="npr. Marko Marković" />
+        </label>
+        <label class="field" style="margin-top: 12px;">
+          <span class="label">Školski email <span class="req" aria-hidden="true">*</span></span>
+          <input type="email" id="email" name="email" required autocomplete="email"
+                 maxlength="120" inputmode="email"
+                 placeholder="npr. marko.markovic@savremena-osnovna.edu.rs" />
+          <span class="hint" style="margin-top: 6px;">Koristi email koji ti je škola dala (završava se sa <strong>@savremena-osnovna.edu.rs</strong>). Ako pošalješ ponovo, ispisuje se prethodni odgovor.</span>
+        </label>
+      </section>
+
+      <section class="block">
+        <h2>Omiljene pesme</h2>
+        <p class="hint">Bar jedna. Do pet. Za svaku pesmu upiši <em>naslov</em> i <em>izvođača</em> kako bismo je lakše pronašli.</p>
+        <div id="songs" class="rows songs"></div>
+      </section>
+
+      <div id="error" class="error" role="alert" aria-live="polite" hidden></div>
+
+      <button type="submit" id="submit" class="btn">Pošalji</button>
+    </form>
+
+    <section id="thanks" class="thanks" hidden>
+      <h2>Hvala! 🎉</h2>
+      <p>Tvoji odgovori su sačuvani. Vidimo se na žurki.</p>
+    </section>
+
+    <footer class="foot">
+      <p>Matura Mix · interno, samo za naš razred</p>
+    </footer>
+  </main>
+
+  <script src="./config.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

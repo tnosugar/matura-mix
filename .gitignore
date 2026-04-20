@@ -1,0 +1,6 @@
+# Matura Mix
+.DS_Store
+node_modules/
+data/
+*.log
+.env

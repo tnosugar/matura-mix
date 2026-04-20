@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Matura Mix · Rezultati</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="brand-bar" aria-hidden="true">
+    <span class="bb-yellow"></span><span class="bb-blue"></span><span class="bb-red"></span><span class="bb-green"></span>
+  </div>
+  <main class="page page-wide">
+    <header class="intro">
+      <img class="logo" src="./savremena-logo.svg" alt="Savremena osnovna škola" />
+      <h1>Matura Mix — rezultati</h1>
+      <p class="tagline">Interno · odgovori iz ankete, uživo</p>
+    </header>
+
+    <!-- Denied state: shown when ?key= is missing or wrong. -->
+    <section id="denied" class="block deny" hidden>
+      <h2>Pristup nije dozvoljen</h2>
+      <p>Ova stranica je privatna. Ako ti treba pristup, traži link od organizatora.</p>
+    </section>
+
+    <!-- Granted state: hidden until the key check passes. -->
+    <section id="granted" hidden>
+      <div class="status-row">
+        <div>
+          <div class="status-main"><span id="count">0</span> <span class="status-sub">odgovora</span></div>
+          <div class="status-sub" id="last-update">čekam prvi odgovor…</div>
+        </div>
+        <div class="status-actions">
+          <button type="button" id="export-csv" class="btn btn-ghost">Preuzmi CSV</button>
+        </div>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button type="button" id="tab-individual" class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-individual">Pojedinačni glasovi</button>
+        <button type="button" id="tab-leaderboard" class="tab" role="tab" aria-selected="false" aria-controls="panel-leaderboard">Top pesme</button>
+      </div>
+
+      <section id="panel-individual" class="panel" role="tabpanel" aria-labelledby="tab-individual">
+        <div class="table-wrap">
+          <table id="individual-table" class="data-table">
+            <thead>
+              <tr>
+                <th>Vreme</th>
+                <th>Ime</th>
+                <th>Email</th>
+                <th>Naslov</th>
+                <th>Izvođač</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="empty-hint" id="individual-empty" hidden>Još nema odgovora.</p>
+      </section>
+
+      <section id="panel-leaderboard" class="panel" role="tabpanel" aria-labelledby="tab-leaderboard" hidden>
+        <div class="spotify-bar" id="spotify-bar">
+          <span class="sp-label">Spotify</span>
+          <span class="sp-status" id="sp-status">nije povezano</span>
+          <input type="text" id="sp-token-input" placeholder="Nalepi Spotify access token…" autocomplete="off" spellcheck="false" />
+          <button type="button" id="sp-connect" class="btn">Poveži</button>
+          <button type="button" id="sp-refresh" class="btn btn-ghost" hidden>Osveži</button>
+          <button type="button" id="sp-disconnect" class="btn btn-ghost" hidden>Odjavi</button>
+        </div>
+        <div class="table-wrap">
+          <table id="leaderboard-table" class="data-table">
+            <thead>
+              <tr>
+                <th class="num">#</th>
+                <th class="num">Glasovi</th>
+                <th>Naslov</th>
+                <th>Izvođač</th>
+                <th>Glasali</th>
+                <th class="t-sp">Spotify</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="empty-hint" id="leaderboard-empty" hidden>Još nema glasova.</p>
+      </section>
+    </section>
+
+    <footer class="foot">
+      <p>Matura Mix · rezultati se osvežavaju uživo · interno, samo za naš razred</p>
+    </footer>
+  </main>
+
+  <script src="./config.js"></script>
+  <script type="module" src="./results.js"></script>
+</body>
+</html>
