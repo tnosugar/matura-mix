@@ -89,6 +89,19 @@ body {
   letter-spacing: 0.01em;
 }
 
+/* Feature illustration between the tagline and the first paragraph.
+   Spans the page width, scales by aspect ratio, sits with breathing
+   room above and below. */
+.feature {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 6px 0 18px;
+  border-radius: var(--radius);
+  background: #0f1138; /* matches the field tone — avoids a flash before
+                           the image paints on slow connections */
+}
+
 .blurb {
   margin: 0 0 10px;
   color: var(--ink);

@@ -1,0 +1,15 @@
+# Chromatic Pulse
+
+A philosophy for communicating celebration through pure geometric form, radial rhythm, and confident color. The work refuses decoration and insists that joy itself has a structure — a lattice of circles, angles, and radiating lines assembled with the discipline of a musical score. Color supplies the emotional temperature; shape does the architectural work; text appears only as the occasional printed mark at the edge of the field, never in the field itself.
+
+Forms are flat and solid. No gradients, no noise, no drop shadows, no pictorial realism. The palette is built the way a printer would mix it: opaque inks, sharp edges, registered color plates. This apparent simplicity is deceptive; every ray, every interval, every circle has been chosen, adjusted, and adjusted again until the composition sits without effort. The piece must read, close up, as a meticulously calibrated object — every distance between marks, every color adjacency, every angle set with master-level precision, as the product of many hours by a practitioner at the top of the field.
+
+The composition organizes itself around a single radial focal point — a center from which light, rhythm, and attention spill outward in measured intervals. Rays emanate from it like the arms of a compass; secondary motifs rhyme off those rays at lower contrast, keeping the piece alive without cluttering it. Where figures appear, they are reduced to near-abstract silhouettes: shoulders, heads, raised arms rendered in pure color, not line, reading as graphic punctuation rather than illustration. Movement is implied by the geometry, not drawn.
+
+The palette is restrained and electric. Two deep field tones — indigo, velvet-black — hold the night. Four vivid primaries cut through as the color of energy: a saturated yellow, a warm red, a clean blue, an acid green. One unexpected accent — a hot coral or magenta — keeps the set from feeling institutional. Colors are placed to rhyme and contrast, never to blend; the work does not try to look soft or inviting. It looks decisive.
+
+Typography, if present, is thin sans-serif, small, decorative — a date, a place-mark, a set of initials — sitting modestly in a corner, never competing with the image. The image speaks; the type signs.
+
+A subtle conceptual thread runs underneath: the bold, poster-forward tradition of late twentieth-century Yugoslav graphic design — Mihajlo Arsovski, Boris Bućan, the schools around them — which treated everyday cultural events (concerts, plays, film seasons) as occasions for serious graphic art. The reference is not quoted. It is felt: in the confidence of the flat color, in the radial discipline, in the willingness to be graphic rather than cute. A viewer who knows that tradition will feel a kinship; a viewer who does not will simply see a very well-made image.
+
+Craftsmanship is the unspoken rule. Nothing here is random, nothing is careless, nothing is filler. The piece must look as if it were composed over many hours by a practitioner at the top of the field, then quietly signed.
