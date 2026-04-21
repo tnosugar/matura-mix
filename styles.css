@@ -256,6 +256,19 @@ input[type="email"].is-invalid {
   .logo { height: 64px; }
 }
 
+/* Narrow phones — stack song title/artist vertically so both get full width,
+   and bump input tap target from ~40px to ~47px so thumbs have more room. */
+@media (max-width: 479px) {
+  .rows.songs .row .pair {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .rows.songs .row .pair .title,
+  .rows.songs .row .pair .artist { flex: 1 1 auto; }
+  input[type="text"],
+  input[type="email"] { padding: 13px 12px; }
+}
+
 /* --- Results page --------------------------------------------------- */
 
 .page-wide { max-width: 1080px; }

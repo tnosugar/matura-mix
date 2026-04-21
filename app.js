@@ -43,6 +43,13 @@ try {
 
 // --- Render rows ------------------------------------------------------
 
+// Mobile UX notes on the song inputs:
+//   autocapitalize="words" keeps proper nouns title-cased as pupils type.
+//   autocorrect="off" + spellcheck="false" stop iOS from "correcting"
+//     Serbian-diacritic words and band names into nonsense (e.g. Balašević
+//     getting autocorrected to "Balancing").
+//   autocomplete="off" keeps the browser from suggesting previous values.
+
 for (let i = 0; i < MAX_SONGS; i++) {
   const row = document.createElement("div");
   row.className = "row";
@@ -50,9 +57,11 @@ for (let i = 0; i < MAX_SONGS; i++) {
     '<span class="idx">' + (i + 1) + ".</span>" +
     '<span class="pair">' +
     '<input type="text" class="title" name="song_' + (i + 1) + '_title" maxlength="160" ' +
-    'autocomplete="off" placeholder="Pesma" />' +
+    'autocomplete="off" autocapitalize="words" autocorrect="off" spellcheck="false" ' +
+    'placeholder="Pesma" />' +
     '<input type="text" class="artist" name="song_' + (i + 1) + '_artist" maxlength="120" ' +
-    'autocomplete="off" placeholder="Izvođač" />' +
+    'autocomplete="off" autocapitalize="words" autocorrect="off" spellcheck="false" ' +
+    'placeholder="Izvođač" />' +
     "</span>";
   songsRoot.appendChild(row);
 }

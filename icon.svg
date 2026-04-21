@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Matura Mix — master app icon.
+  Square PNG-parity variant: no clip-path, so ImageMagick renders it
+  identically to the PNGs. iOS applies its own rounded-rect mask on the
+  home screen; Android adaptive-icon launchers crop as they please.
+  Design: solid school-blue background, white "MM" monogram centered,
+  four-color school brand stripe at the bottom that mirrors the
+  .brand-bar strip on the site header.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect x="0" y="0" width="512" height="512" fill="#3564ab"/>
+  <text x="256" y="300"
+        font-family="Helvetica, Arial, sans-serif"
+        font-size="240"
+        font-weight="800"
+        text-anchor="middle"
+        fill="#ffffff">MM</text>
+  <rect x="0"   y="464" width="128" height="48" fill="#f7b62f"/>
+  <rect x="128" y="464" width="128" height="48" fill="#3564ab"/>
+  <rect x="256" y="464" width="128" height="48" fill="#e52c2d"/>
+  <rect x="384" y="464" width="128" height="48" fill="#39a749"/>
+</svg>
