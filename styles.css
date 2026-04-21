@@ -90,11 +90,14 @@ body {
 }
 
 /* Feature illustration between the tagline and the first paragraph.
-   Spans the page width, scales by aspect ratio, sits with breathing
-   room above and below. */
+   Always sized to the content column; scales by aspect ratio; sits
+   with breathing room above and below. `max-width: 100%` is the
+   load-bearing rule — width: 100% alone can be overridden by the
+   image's intrinsic size in some edge cases. */
 .feature {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   margin: 6px 0 18px;
   border-radius: var(--radius);
