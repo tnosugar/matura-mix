@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Matura Mix — preseljen</title>
+  <!--
+    Meta refresh is the no-JS fallback. It redirects to the new results page
+    but does NOT preserve the query string (the DJ's ?key=... gate).
+
+    The inline script below upgrades the redirect to preserve location.search
+    when JS is available, so a bookmarked
+    "https://tnosugar.github.io/matura-mix/results.html?key=ABC123" still
+    lands the DJ on the new results page with their key intact.
+  -->
+  <meta http-equiv="refresh" content="0; url=https://tnosugar.github.io/matura-mix-public-app/results.html">
+  <link rel="canonical" href="https://tnosugar.github.io/matura-mix-public-app/results.html">
+  <script>
+    (function () {
+      var target = "https://tnosugar.github.io/matura-mix-public-app/results.html" +
+                   (window.location.search || "") +
+                   (window.location.hash || "");
+      // Replace rather than push so back-button does not loop on the legacy URL.
+      window.location.replace(target);
+    })();
+  </script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", system-ui, sans-serif;
+           max-width: 32rem; margin: 4rem auto; padding: 0 1rem;
+           color: #222; line-height: 1.5; }
+    a { color: #3564ab; word-break: break-all; }
+    .muted { color: #666; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <h1>Stranica se preselila</h1>
+  <p>
+    Nova adresa:
+    <a id="newurl" href="https://tnosugar.github.io/matura-mix-public-app/results.html">tnosugar.github.io/matura-mix-public-app/results.html</a>
+  </p>
+  <p class="muted">
+    Ako klikneš link bez JavaScript-a, ključ (<code>?key=…</code>) iz tvog bookmark-a neće biti prenet —
+    dodaj ga ručno na kraj nove adrese.
+  </p>
+  <script>
+    // Update the visible link too, so anyone who copy-pastes it gets the key.
+    var a = document.getElementById("newurl");
+    if (a) {
+      a.href = "https://tnosugar.github.io/matura-mix-public-app/results.html" +
+               (window.location.search || "") +
+               (window.location.hash || "");
+    }
+  </script>
+</body>
+</html>

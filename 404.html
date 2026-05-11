@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Matura Mix — preseljen</title>
+  <!--
+    GitHub Pages serves this 404.html for any path under /matura-mix/ that
+    does not have a corresponding file in this repo (e.g.
+    /matura-mix/files/hero.png, /matura-mix/icon-512.png, an old deep link).
+
+    The meta refresh below is the no-JS fallback: it sends the visitor to
+    the new app root, discarding both path and query.
+
+    The inline script upgrades the redirect to preserve the original path
+    + query + hash when JS is available, so deep links keep working.
+  -->
+  <meta http-equiv="refresh" content="0; url=https://tnosugar.github.io/matura-mix-public-app/">
+  <link rel="canonical" href="https://tnosugar.github.io/matura-mix-public-app/">
+  <script>
+    (function () {
+      var NEW_BASE = "https://tnosugar.github.io/matura-mix-public-app/";
+      var subpath = window.location.pathname.replace(/^\/matura-mix\/?/, "");
+      var target = NEW_BASE + subpath +
+                   (window.location.search || "") +
+                   (window.location.hash || "");
+      window.location.replace(target);
+    })();
+  </script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", system-ui, sans-serif;
+           max-width: 32rem; margin: 4rem auto; padding: 0 1rem;
+           color: #222; line-height: 1.5; }
+    a { color: #3564ab; word-break: break-all; }
+    .muted { color: #666; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <h1>Matura Mix se preselio</h1>
+  <p>
+    Idi na novu adresu:
+    <a href="https://tnosugar.github.io/matura-mix-public-app/">tnosugar.github.io/matura-mix-public-app/</a>
+  </p>
+  <p class="muted">
+    Ako si došao/la sa direktnog linka i nisi preusmeren/a automatski, klikni link iznad.
+  </p>
+</body>
+</html>
